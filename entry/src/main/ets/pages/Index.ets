@@ -15,7 +15,7 @@ struct Index {
           middle: { anchor: '__container__', align: HorizontalAlign.Center }
         })
         .onClick(() => {
-          webSocketManager.setupWebSocket(); // 👈 Connect only when tapped
+          webSocketManager.setupWebSocket();
         })
     }
     .height('100%')
@@ -23,7 +23,7 @@ struct Index {
     .linearGradient({
       direction: GradientDirection.Bottom,
       colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1],]
+        [$r('app.color.base_background_gradient_end'), 1]]
     })
   }
 }
